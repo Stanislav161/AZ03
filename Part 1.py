@@ -31,5 +31,11 @@ plt.ylabel('Плотность вероятности', fontsize=12)
 plt.grid(alpha=0.3)          # Полупрозрачная сетка
 plt.legend()                 # Отображение легенды
 
+# Сохранение в файл (добавлено)
+plt.savefig('normal_distribution.png',  # Имя файла
+            dpi=300,                   # Высокое разрешение
+            bbox_inches='tight',       # Обрезать пустые поля
+            facecolor='white')         # Фон
+
 # Отображение графика
 plt.show()
